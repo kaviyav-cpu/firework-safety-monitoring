@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FireSafe IoT | Smart Firework Factory Safety</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:#07111f;color:#eaf2ff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+nav{position:sticky;top:0;z-index:10;background:rgba(7,17,31,.92);backdrop-filter:blur(12px);border-bottom:1px solid #203149}
+.nav{max-width:1150px;margin:auto;padding:16px 22px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:21px;font-weight:800}.logo span{color:#38bdf8}
+.navlinks{display:flex;gap:24px;font-size:14px;color:#b8c7dc}
+.navlinks a:hover{color:#fff}
+.hero{min-height:650px;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 80% 25%,#12365d 0,#07111f 45%)}
+.hero:before{content:"";position:absolute;width:420px;height:420px;border:1px solid #214466;border-radius:50%;right:-100px;top:80px;box-shadow:0 0 80px #0ea5e933}
+.container{max-width:1150px;margin:auto;padding:80px 22px}
+.hero .container{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.badge{display:inline-block;padding:7px 13px;border:1px solid #245277;border-radius:30px;color:#7dd3fc;background:#0b2238;font-size:13px;margin-bottom:18px}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.05;letter-spacing:-2px;margin-bottom:20px}
+.gradient{background:linear-gradient(90deg,#fff,#67e8f9,#60a5fa);-webkit-background-clip:text;color:transparent}
+.hero p{font-size:18px;color:#b9c8db;max-width:650px}
+.buttons{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+.btn{padding:13px 20px;border-radius:10px;font-weight:700;background:#38bdf8;color:#06111f}
+.btn.alt{background:transparent;color:#dbeafe;border:1px solid #35506d}
+.dashboard{background:#0b1728;border:1px solid #28405c;border-radius:18px;padding:18px;box-shadow:0 25px 80px #0007}
+.dtop{display:flex;justify-content:space-between;margin-bottom:18px;color:#bcd0e7}.live{color:#4ade80;font-size:13px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.sensor{background:#101f33;border:1px solid #233b55;border-radius:12px;padding:15px}
+.sensor small{color:#8ea4bc}.value{font-size:28px;font-weight:800;margin:5px 0}.safe{color:#4ade80;font-size:12px}
+section{border-top:1px solid #16283d}
+.center{text-align:center}.muted{color:#9fb0c5;max-width:760px;margin:0 auto}
+h2{font-size:38px;margin-bottom:14px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+.card{background:#0b1728;border:1px solid #20354d;border-radius:16px;padding:25px;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#38bdf8}
+.icon{font-size:30px;margin-bottom:12px}.card h3{margin-bottom:8px}.card p{color:#9fb0c5}
+.problem{background:#091524}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;align-items:center;margin-top:38px}
+.step{background:#0d1b2d;border:1px solid #29415c;border-radius:14px;padding:20px;text-align:center}
+.arrow{text-align:center;color:#38bdf8;font-size:24px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:35px}
+.stat{padding:24px;text-align:center;background:#0b1728;border-radius:14px;border:1px solid #20354d}.stat strong{display:block;font-size:30px;color:#67e8f9}
+.cta{background:linear-gradient(135deg,#0c2943,#10233c);text-align:center;border:1px solid #245277;border-radius:22px;padding:55px 25px}
+footer{padding:25px;text-align:center;color:#72849a;border-top:1px solid #16283d;font-size:13px}
+@media(max-width:850px){.hero .container{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.flow{grid-template-columns:1fr}.arrow{display:none}.stats{grid-template-columns:1fr 1fr}.navlinks{display:none}}
+@media(max-width:550px){.cards{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}h2{font-size:30px}}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="nav">
+<div class="logo">FireSafe<span>IoT</span></div>
+<div class="navlinks">
+<a href="#problem">Problem</a><a href="#solution">Solution</a><a href="#features">Features</a><a href="#how">How It Works</a><a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<header class="hero">
+<div class="container">
+<div>
+<div class="badge">SMART INDUSTRIAL SAFETY • IoT TECHNOLOGY</div>
+<h1>Safer Factories.<br><span class="gradient">Smarter Monitoring.</span></h1>
+<p>IoT-based safety monitoring designed for firework manufacturing facilities — helping teams monitor critical conditions, identify abnormal situations early, and respond with real-time alerts.</p>
+<div class="buttons">
+<a class="btn" href="#contact">Request a Demo</a>
+<a class="btn alt" href="#solution">Explore Solution ↓</a>
+</div>
+</div>
+
+<div class="dashboard">
+<div class="dtop"><strong>Factory Safety Dashboard</strong><span class="live">● SYSTEM ONLINE</span></div>
+<div class="grid">
+<div class="sensor"><small>Temperature</small><div class="value">29°C</div><div class="safe">● Normal</div></div>
+<div class="sensor"><small>Humidity</small><div class="value">58%</div><div class="safe">● Normal</div></div>
+<div class="sensor"><small>Smoke</small><div class="value">0 ppm</div><div class="safe">● Clear</div></div>
+<div class="sensor"><small>Gas</small><div class="value">Safe</div><div class="safe">● Normal</div></div>
+<div class="sensor"><small>Storage Load</small><div class="value">68%</div><div class="safe">● Within limit</div></div>
+<div class="sensor"><small>Machine Status</small><div class="value">OK</div><div class="safe">● Normal</div></div>
+</div>
+</div>
+</div>
+</header>
+
+<section id="problem" class="problem">
+<div class="container">
+<div class="center">
+<h2>The Safety Challenge</h2>
+<p class="muted">Firework manufacturing involves hazardous materials and demanding production environments. Manual or periodic checks may provide limited continuous visibility into changing conditions.</p>
+</div>
+<div class="cards">
+<div class="card"><div class="icon">🔥</div><h3>Hazardous Conditions</h3><p>Environmental changes can create unsafe working conditions.</p></div>
+<div class="card"><div class="icon">📦</div><h3>Storage Risks</h3><p>Storage quantity and load conditions need careful monitoring.</p></div>
+<div class="card"><div class="icon">⚙️</div><h3>Machine Abnormalities</h3><p>Equipment issues may require faster identification and response.</p></div>
+</div>
+</div>
+</section>
+
+<section id="solution">
+<div class="container">
+<div class="center">
+<h2>One Connected Safety System</h2>
+<p class="muted">Our solution combines environmental, storage, and machine-condition monitoring into one IoT-enabled platform.</p>
+</div>
+<div class="cards">
+<div class="card"><div class="icon">🌡️</div><h3>Environmental Monitoring</h3><p>Monitor temperature and humidity continuously.</p></div>
+<div class="card"><div class="icon">🚨</div><h3>Hazard Detection</h3><p>Monitor smoke, gas, and flame conditions.</p></div>
+<div class="card"><div class="icon">📊</div><h3>Smart Dashboard</h3><p>View safety information and alerts in one place.</p></div>
+</div>
+</div>
+</section>
+
+<section id="features" class="problem">
+<div class="container">
+<div class="center"><h2>Built Around Factory Safety</h2><p class="muted">Key capabilities designed for simple, continuous safety monitoring.</p></div>
+<div class="cards">
+<div class="card"><h3>Real-Time Monitoring</h3><p>Continuous visibility into selected safety parameters.</p></div>
+<div class="card"><h3>Instant Alerts</h3><p>Notify responsible personnel when abnormal conditions are detected.</p></div>
+<div class="card"><h3>Storage Weight Tracking</h3><p>Monitor storage weight and capacity conditions.</p></div>
+<div class="card"><h3>Machine Monitoring</h3><p>Track machine conditions to support safer operations.</p></div>
+<div class="card"><h3>Cloud Data Logging</h3><p>Maintain monitoring data for review and analysis.</p></div>
+<div class="card"><h3>Simple Interface</h3><p>Designed for practical use by factory teams.</p></div>
+</div>
+</div>
+</section>
+
+<section id="how">
+<div class="container">
+<div class="center"><h2>How It Works</h2><p class="muted">From physical conditions to actionable safety information.</p></div>
+<div class="flow">
+<div class="step"><strong>01</strong><br>Sensor Data</div><div class="arrow">→</div>
+<div class="step"><strong>02</strong><br>IoT Controller</div><div class="arrow">→</div>
+<div class="step"><strong>03</strong><br>Cloud / Dashboard</div>
+</div>
+<div class="flow">
+<div class="step"><strong>04</strong><br>Risk Alert</div><div class="arrow">→</div>
+<div class="step"><strong>05</strong><br>Safety Response</div>
+</div>
+</div>
+</section>
+
+<section class="problem">
+<div class="container">
+<div class="center"><h2>What We Aim to Improve</h2></div>
+<div class="stats">
+<div class="stat"><strong>24/7</strong>Monitoring concept</div>
+<div class="stat"><strong>6+</strong>Safety parameters</div>
+<div class="stat"><strong>1</strong>Connected platform</div>
+<div class="stat"><strong>⚡</strong>Faster alerts</div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="cta">
+<h2>Ready to Explore Smarter Safety?</h2>
+<p class="muted">Talk to our team about a demonstration of the IoT-Based Firework Factory Safety Monitoring System.</p>
+<div class="buttons" style="justify-content:center">
+<a class="btn" href="mailto:yourteam@gmail.com">Request a Demo</a>
+</div>
+<p style="margin-top:20px;color:#9fb0c5">Email: yourteam@gmail.com &nbsp; | &nbsp; Tamil Nadu, India</p>
+</div>
+</div>
+</section>
+
+<footer>© 2026 FireSafe IoT • IoT-Based Firework Factory Safety Monitoring System</footer>
+
+</body>
+</html>
